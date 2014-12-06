@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -40,9 +42,19 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void buttonclick2(View view){
+        ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
+        img.bringToFront();
+        Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
+        toast.show();
+
+    }
     public void buttonclick(View view){
-        ImageView img = (ImageView) findViewById(R.id.wizardView);
-        img.setImageResource(R.drawable.wizard2);
+        ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
+        img.bringToFront();
+        Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
+        toast.show();
+
     }
 
 }
