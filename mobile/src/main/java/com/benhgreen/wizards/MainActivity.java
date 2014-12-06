@@ -1,6 +1,7 @@
 package com.benhgreen.wizards;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -48,12 +49,17 @@ public class MainActivity extends ActionBarActivity {
         Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
         toast.show();
 
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.tidus);
+        mp.start();
     }
     public void buttonclick(View view){
         ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
         img.bringToFront();
         Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
         toast.show();
+
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.tidus);
+        mp.start();
 
     }
 
