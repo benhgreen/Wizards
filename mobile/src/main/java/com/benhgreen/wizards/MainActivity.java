@@ -43,10 +43,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonclick2(View view){
         ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
-        ImageButton img2 = (ImageButton) findViewById(R.id.wizardView2);
-                img2.bringToFront();
-        img.setVisibility(View.INVISIBLE);
-        img2.setVisibility(View.VISIBLE);
+            img.bringToFront();
         Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
         toast.show();
 
@@ -60,11 +57,8 @@ public class MainActivity extends ActionBarActivity {
         });
     }
     public void buttonclick(View view){
-        ImageButton img2 = (ImageButton) findViewById(R.id.wizardView2);
-        ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
+            ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
                 img.bringToFront();
-        img2.setVisibility(View.INVISIBLE);
-        img.setVisibility(View.VISIBLE);
        Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
        toast.show();
 
