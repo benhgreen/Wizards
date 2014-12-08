@@ -6,16 +6,16 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/wizardView2"
+        android:src="@drawable/wizard4"
+        android:onClick="buttonclick2"
+        android:scaleType="fitCenter"></ImageButton>
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/wizardView1"
         android:src="@drawable/wizard3"
         android:onClick="buttonclick"
         android:scaleType="fitCenter"
         android:contentDescription="Wizard Pouting"></ImageButton>
-    <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/wizardView2"
-        android:src="@drawable/wizard4"
-        android:onClick="buttonclick2"
-        android:scaleType="fitCenter"></ImageButton>
 </RelativeLayout>
