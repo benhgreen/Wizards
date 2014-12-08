@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -47,7 +47,7 @@ public class MainActivity extends ActionBarActivity {
         //Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
         //toast.show();
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.tidus);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
