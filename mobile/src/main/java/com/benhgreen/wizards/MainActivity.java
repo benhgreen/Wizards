@@ -63,6 +63,7 @@ public class MainActivity extends ActionBarActivity {
        //toast.show();
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
+        //here lies the double hooooo
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
