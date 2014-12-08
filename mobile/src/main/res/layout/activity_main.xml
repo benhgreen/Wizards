@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/wizardView1"
-        android:src="@drawable/wizard1"
+        android:src="@drawable/wizard3"
         android:onClick="buttonclick"
         android:scaleType="fitCenter"/>
     <ImageButton
