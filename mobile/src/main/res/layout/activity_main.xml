@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/wizardView2"
-        android:src="@drawable/wizard2"
+        android:src="@drawable/wizard4"
         android:onClick="buttonclick2"
         android:scaleType="fitCenter"/>
 </RelativeLayout>
