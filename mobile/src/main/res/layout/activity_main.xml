@@ -4,18 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/abc_action_bar_default_height_material"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView2"
         android:src="@drawable/wizard4"
         android:onClick="buttonclick2"
-        android:scaleType="fitCenter"></ImageButton>
+        android:scaleType="fitCenter"
+        android:background="#0000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"></ImageButton>
     <ImageButton
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/abc_action_bar_default_height_material"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView1"
         android:src="@drawable/wizard3"
         android:onClick="buttonclick"
         android:scaleType="fitCenter"
-        android:contentDescription="Wizard Pouting"></ImageButton>
+        android:background="#0000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+             </ImageButton>
 </RelativeLayout>

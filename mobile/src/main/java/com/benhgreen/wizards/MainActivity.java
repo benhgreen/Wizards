@@ -16,8 +16,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageButton image = (ImageButton) findViewById(R.id.wizardView2);
+        image.setVisibility (View.INVISIBLE);
             }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,22 +44,10 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonclick2(View view){
         ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
-        ImageButton image = (ImageButton) findViewById (R.id.wizardView2);
-        img.bringToFront();
-        image.setVisibility (View.INVISIBLE);
-        img.setVisibility (View.VISIBLE);
+        ImageButton image = (ImageButton) findViewById(R.id.wizardView2);
         Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
         toast.show();
-
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-    }
+          }
     public void buttonclick(View view){
         ImageButton image = (ImageButton) findViewById(R.id.wizardView1);
         ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
@@ -69,11 +58,16 @@ public class MainActivity extends ActionBarActivity {
        toast.show();
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
-        //here lies the double hooooo
-               mp.start();
+                     mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
             @Override
             public void onCompletion(MediaPlayer mp) {
+                ImageButton image = (ImageButton) findViewById(R.id.wizardView1);
+                ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
+                image.bringToFront();
+                img.setVisibility (View.INVISIBLE);
+                image.setVisibility (View.VISIBLE);
                 mp.release();
             }
         });
