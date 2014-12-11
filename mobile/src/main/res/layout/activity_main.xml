@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:nestedScrollingEnabled="true"
+    android:longClickable="false">
     <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -10,7 +13,8 @@
         android:src="@drawable/wizardbg"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:scaleType="fitCenter" />
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/changeImage" />
     <ImageButton
         android:layout_width="@dimen/abc_action_bar_default_height_material"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
@@ -20,7 +24,8 @@
         android:scaleType="fitCenter"
         android:background="#0000"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"></ImageButton>
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/changeImage"></ImageButton>
     <ImageButton
         android:layout_width="@dimen/abc_action_bar_default_height_material"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
@@ -30,6 +35,7 @@
         android:scaleType="fitCenter"
         android:background="#0000"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/changeImage">
              </ImageButton>
     </RelativeLayout>
