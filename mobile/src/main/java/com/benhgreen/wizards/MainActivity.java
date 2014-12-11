@@ -45,17 +45,17 @@ public class MainActivity extends ActionBarActivity {
     public void buttonclick2(View view){
         ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
         ImageButton image = (ImageButton) findViewById(R.id.wizardView2);
-        Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
-        toast.show();
-          }
+        //Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
+        //toast.show();
+     }
     public void buttonclick(View view){
         ImageButton image = (ImageButton) findViewById(R.id.wizardView1);
         ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
                 img.bringToFront();
         image.setVisibility (View.INVISIBLE);
         img.setVisibility (View.VISIBLE);
-       Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
-       toast.show();
+       //Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
+       //toast.show();
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
                      mp.start();

@@ -3,6 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/wizardbg"
+        android:src="@drawable/wizardbg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter" />
     <ImageButton
         android:layout_width="@dimen/abc_action_bar_default_height_material"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
@@ -24,4 +32,4 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
              </ImageButton>
-</RelativeLayout>
+    </RelativeLayout>
