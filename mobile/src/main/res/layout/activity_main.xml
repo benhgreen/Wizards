@@ -6,6 +6,18 @@
     android:background="@android:color/black"
     android:nestedScrollingEnabled="true"
     android:longClickable="false">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wizardvariable"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:textColor="#c4ff49ec"
+        android:typeface="sans"
+        android:visibility="invisible" />
+
     <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -38,4 +50,4 @@
         android:layout_centerVertical="true"
         android:contentDescription="@string/changeImage">
              </ImageButton>
-    </RelativeLayout>
+   </RelativeLayout>
