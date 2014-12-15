@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:nestedScrollingEnabled="true"
     android:longClickable="false">
     <TextView
         android:layout_width="wrap_content"
@@ -27,7 +26,7 @@
         android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
         android:contentDescription="@string/changeImage" />
-    <ImageButton
+    <ImageView
         android:layout_width="@dimen/abc_action_bar_default_height_material"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView2"
@@ -37,13 +36,14 @@
         android:background="#0000"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:contentDescription="@string/changeImage"></ImageButton>
+        android:contentDescription="@string/changeImage"
+        android:visibility="invisible"></ImageView>
     <ImageButton
         android:layout_width="@dimen/abc_action_bar_default_height_material"
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView1"
         android:src="@drawable/wizard3"
-        android:onClick="buttonclick"
+        android:onClick="generatewizard"
         android:scaleType="fitCenter"
         android:background="#0000"
         android:layout_centerHorizontal="true"
