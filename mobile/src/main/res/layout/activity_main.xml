@@ -31,7 +31,6 @@
         android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView2"
         android:src="@drawable/wizard4"
-        android:onClick="buttonclick2"
         android:scaleType="fitCenter"
         android:background="#0000"
         android:layout_centerHorizontal="true"

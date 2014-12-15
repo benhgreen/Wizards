@@ -9,8 +9,11 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends ActionBarActivity {
-    String[] wizardarray1= {"Wizard","Warlock","Mage","Sage","Manny","Manuel","Manfred"};
-    String[] wizardarray2= {"Power","Magic","Warlocks","Idiots","Manny","Manuel","Manfred"};
+    String[] wizardarray1= {"Wizard","Warlock","Mage","Sage","Lord","Prince","Sultan",
+            "Lady","Princess","Caesar","King","Queen"};
+    String[] wizardarray2= {"Kicking","Knives","Warlocks","Idiots","Manny","Manuel","Manfred","Swag","Grease",
+            "Dying a Lot","Running Away Like A Little Girl","Drinking Bleach","Quesadillas",
+            "The Dumpster","Pure Trash","Punching Someone And Breaking A Finger"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
