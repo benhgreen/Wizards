@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <ImageButton
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/wizardView1"
-        android:src="@drawable/wizard1"
-        android:onClick="buttonclick"
-        android:scaleType="fitCenter"/>
-    <ImageButton
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:longClickable="false">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wizardvariable"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:textColor="#c4ff49ec"
+        android:typeface="sans"
+        android:visibility="invisible" />
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/wizardbg"
+        android:src="@drawable/wizardbg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/changeImage" />
+    <ImageView
+        android:layout_width="@dimen/abc_action_bar_default_height_material"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
         android:id="@+id/wizardView2"
-        android:src="@drawable/wizard2"
-        android:onClick="buttonclick2"
-        android:scaleType="fitCenter"/>
-</RelativeLayout>
+        android:src="@drawable/wizard4"
+        android:scaleType="fitCenter"
+        android:background="#0000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/changeImage"
+        android:visibility="invisible"></ImageView>
+    <ImageButton
+        android:layout_width="@dimen/abc_action_bar_default_height_material"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:id="@+id/wizardView1"
+        android:src="@drawable/wizard3"
+        android:onClick="generatewizard"
+        android:scaleType="fitCenter"
+        android:background="#0000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/changeImage">
+             </ImageButton>
+   </RelativeLayout>

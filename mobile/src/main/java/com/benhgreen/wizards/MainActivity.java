@@ -1,75 +1,54 @@
 package com.benhgreen.wizards;
-
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-//import android.widget.Toast;
-
+import android.widget.ImageView;
+import android.widget.TextView;
+import java.util.Random;
 
 public class MainActivity extends ActionBarActivity {
+    String[] wizardarray1= {"Wizard","Warlock","Mage","Sage","Lord","Prince","Sultan",
+            "Lady","Princess","Caesar","King","Queen"};
+    String[] wizardarray2= {"Kicking","Knives","Warlocks","Idiots","Manny","Manuel","Manfred","Swag","Grease",
+            "Dying a Lot","Running Away Like A Little Girl","Drinking Bleach","Quesadillas",
+            "The Dumpster","Pure Trash","Punching Someone And Breaking A Finger"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+                }
 
+    public void generatewizard (View view){
+        Random rand =new Random ();
+        ImageButton image = (ImageButton) findViewById(R.id.wizardView1);
+        ImageView img = (ImageView) findViewById(R.id.wizardView2);
+        TextView text = (TextView) findViewById(R.id.textView);
+        int x = rand.nextInt(wizardarray1.length);
+            String wizardvariable = wizardarray1[x];
+             x = rand.nextInt(wizardarray2.length);
+              String wizardvariable2 = wizardarray2[x];
+                text.setText(wizardvariable + " of " + wizardvariable2);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public void buttonclick2(View view){
-        ImageButton img = (ImageButton) findViewById(R.id.wizardView1);
         img.bringToFront();
-        //Toast toast = Toast.makeText(getApplicationContext(), "Button 2 Pressed", Toast.LENGTH_SHORT);
-        //toast.show();
+        image.setVisibility (View.INVISIBLE);
+        img.setVisibility (View.VISIBLE);
+        text.setVisibility (View.VISIBLE);
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
-        mp.start();
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
+                     mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-    }
-    public void buttonclick(View view){
-        ImageButton img = (ImageButton) findViewById(R.id.wizardView2);
-        img.bringToFront();
-       //Toast toast = Toast.makeText(getApplicationContext(), "Button 1 Pressed", Toast.LENGTH_SHORT);
-       //toast.show();
 
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.hoooo);
-        //here lies the double hooooo
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
+                public void onCompletion(MediaPlayer mp) {
+                    ImageButton image = (ImageButton) findViewById(R.id.wizardView1);
+                      ImageView img = (ImageView) findViewById(R.id.wizardView2);
+                       image.bringToFront();
+                     img.setVisibility (View.INVISIBLE);
+                       image.setVisibility (View.VISIBLE);
+                     mp.release();
+                            }
         });
 
     }
